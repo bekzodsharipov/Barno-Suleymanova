@@ -360,21 +360,6 @@
 
 
   <script src="../js/app.js" defer></script>
-
-  <script>
-    // Fallback for browsers that don't support preload
-    var loadCSS = function (href) {
-      var cssLink = document.createElement("link");
-      cssLink.rel = "stylesheet";
-      cssLink.href = href;
-      document.head.appendChild(cssLink);
-    };
-
-    // Check if preload is not supported
-    if (!("preload" in document.createElement("link").relList)) {
-      loadCSS("./css/main.css");
-    }
-  </script>
 </body>
 
 </html>
