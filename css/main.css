@@ -55,7 +55,7 @@
   top: 0;
   max-width: 400px;
   width: 100%;
-  padding: 10px 30px 10px 30px;
+  padding: 26px 30px 26px 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
@@ -200,10 +200,18 @@
   .hero__subtitle {
     font-size: 28px;
   }
+}
 
+@media(min-width: 1085px){
+  .only_mobile{
+    display: none;
+  }
 }
 
 @media (max-width: 1085px) {
+  .only_desktop{
+    display: none;
+  }
   .hero__right {
     display: none;
   }
@@ -213,15 +221,19 @@
     max-width: 390px;
   }
   .hero__top {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     position: static;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 25px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     gap: 10px;
+    font-size: 18px;
   }
   .calendar__img {
     min-width: 24px;
@@ -240,10 +252,16 @@
   }
   .hero__title {
     width: 100%;
-    font-size: 35px;
+    font-size: 18px;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 2px;
+    text-wrap: wrap;
+    max-width: 358px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
   }
   .hero__title > span{
     display: none;
@@ -257,6 +275,12 @@
   .text-14 {
     font-size: 14px;
     line-height: 1.5;
+    max-width: 242px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-14 > br {
+    display: none;
   }
   .hero__left_bottom {
     display: flex;
@@ -292,7 +316,7 @@
     font-size: 16px;
   }
   .hero__center {
-    margin-top: -25px;
+    margin-top: -15px;
     position: relative;
     text-align: left;
     display: flex;
@@ -448,7 +472,6 @@
   }
 }
 
-/* Modal Styles */
 .homeModal {
   position: fixed;
   top: 0;
@@ -639,79 +662,6 @@ input[type="tel"] {
   color: #cb0000;
   font-size: 14px;
   margin-top: 5px;
-}
-
-/* Subscribe Page Styles */
-.prompt-container {
-  background-color: #e8e8e8;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.prompt-box {
-  background-color: white;
-  border-radius: 20px;
-  padding: 30px 20px;
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.icon {
-  margin-bottom: 20px;
-}
-
-.promeTitle {
-  font-family: MontserratBold, sans-serif;
-  font-size: 35px;
-  margin-bottom: 15px;
-}
-.promeTitle > span {
-  color: rgb(14, 178, 133);
-}
-
-.promtText {
-  font-family: MontserratMedium, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.arrow {
-}
-
-.subscribe-button {
-  color: white;
-  display: flex;
-  cursor: pointer;
-  background-color: #008ae7;
-  box-shadow: 0px 7px 0px 0px rgba(0, 52, 86, 1);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: MontserratSemibold, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  padding: 26px 63px;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 78px;
-  margin-bottom: 27px;
-  text-decoration: none;
-}
-
-.subscribe-button:hover {
-  background-color: #1565c0;
 }
 
 @media (min-width: 480px) {
