@@ -196,6 +196,9 @@
 .hero__center {
   display: none;
 }
+.hero__left_bottom{
+  margin-top: 59px;
+}
 @media (max-width: 1205px) {
   .hero__subtitle {
     font-size: 28px;
