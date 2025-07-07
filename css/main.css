@@ -255,10 +255,10 @@
   }
   .hero__title {
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 2px;
+    margin-bottom: 9px;
     text-wrap: wrap;
     max-width: 358px;
     width: 100%;
