@@ -330,7 +330,8 @@
     max-width: 213px;
     padding: 8px;
     padding-right: 0px;
-    left: 13%;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 12px;
     bottom: 91px;
   }
